@@ -1,0 +1,79 @@
+.sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 18vw;
+    background: #101010;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebarContent {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.profileDetails {
+    margin-top: 2rem;
+}
+
+.profileImageDiv {
+    position: relative;
+}
+
+.notifications {
+    position: absolute;
+    left: 6rem;
+    top: -2rem;
+    width: 2.9rem;
+    height: 2.9rem;
+    border-radius: 50%;
+    background-color: #DC3434;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userName {
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.userEmail {
+    opacity: 0.6;
+}
+
+.sidebarNav {
+    margin-top: -8rem;
+    margin-bottom: 3rem;
+}
+
+.sidebarUl {
+    padding-left: 0;
+}
+
+.sidebarNavItem {
+    margin: 2rem 0;
+}
+
+.sidebarNavLink {
+    text-decoration: none;
+    outline: none;
+    color: white;
+    opacity: 0.5;
+    font-size: 2.5rem;
+    font-weight: 600;
+    &Active {
+        @extend .sidebarNavLink;
+        opacity: 1;
+    }
+}
